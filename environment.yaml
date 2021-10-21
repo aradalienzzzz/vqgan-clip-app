@@ -1,0 +1,35 @@
+name: vqgan-clip-app
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - pytorch::pytorch=1.8.1
+  - pytorch::torchvision=0.9.1
+  - pytorch::torchaudio=0.8.1
+  - cudatoolkit=10.2
+  - omegaconf
+  - pytorch-lightning
+  - tqdm
+  - regex
+  - kornia
+  - ftfy
+  - pillow=7.1.2
+  - python=3.8 # For compatibility
+  - imageio-ffmpeg=0.2.0 # For compatibility
+  - ipykernel
+  - imageio
+  - ipywidgets
+  - streamlit
+  - ffmpeg
+  - pyyaml
+  - flask
+  - pip
+  - pip:
+    # - stegano
+    # - python-xmp-toolkit
+    # - imgtag
+    - einops
+    - transformers
+    - git+https://github.com/openai/CLIP
+prefix: /home/tnwei/miniconda3/envs/vqgan-clip-app
